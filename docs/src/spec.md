@@ -4,9 +4,9 @@
 
 ### Entry
 
-Entry is a word/phrase definition written by HTML.
+Entry is a word/phrase definition written by HTML. There are some rules you should know
 
-- if the definition is `@@@link={another_entry_name}`, it means redirect to another entry
+- if the definition is `@@@LINK={another_entry_name}`, it means redirect to another entry
 - resource url is `/@resource?name={resource_name}`
 - `<a href="entry://{entry_name}">` entry link
 - `<a href="sound://{resource_name}">` click to play sound, you can also use audio element with resource url
