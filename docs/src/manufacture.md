@@ -1,6 +1,9 @@
 # Manufacture
 
-Beluga file is compressed, it is hard to edit, so we provide a database format for editing.
+Beluga file is compressed, it is hard to edit, so we provide a database(sqlite) format for editing.
+
+- `.bel-db` is raw of `.bel`
+- `.beld-db` is raw of `.beld`
 
 ```sql
 CREATE TABLE {} (
@@ -11,4 +14,15 @@ CREATE TABLE {} (
 )
 ```
 
-More information in [beluga-builder](https://github.com/youginil/beluga-builder)
+## Data Processing
+
+[beluga-project](https://github.com/youginil/beluga-project) provides a few of useful scripts to process beluga database, fix HTML tag erros, modify HTML structure, tokenization, entry preview...
+
+## File Transformation
+
+[beluga-builder](https://github.com/youginil/beluga-project/releases) is a file convertor. It can do:
+
+- `.mdx` --> `.bel-db`
+- `.mdd` --> `.beld-db`
+- `.bel` <--> `.bel-db`
+- `.beld` <--> `.beld-db`

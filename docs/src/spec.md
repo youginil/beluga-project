@@ -39,15 +39,26 @@ Entry file and resource file have the same structure: **Metadata** and **two B+ 
 
 ### Parsing
 
-| Bytes             | Description                           |
-| ----------------- | ------------------------------------- |
-| 2                 | `spec` the beluga file format version |
-| 4                 | `metadata_length`                     |
-| `metadata_length` | `Metadata` JSON string                |
-| -24 + 8           | entry/resource root node offset       |
-| -16 + 4           | entry/resource root node size         |
-| -12 + 8           | token root node offset                |
-| -4 + 4            | token root node size                  |
+| Bytes             | Description                                         |
+| ----------------- | --------------------------------------------------- |
+| 2                 | `spec` the beluga file format version, current is 1 |
+| 4                 | `metadata_length`                                   |
+| `metadata_length` | `Metadata` JSON string                              |
+| -24 + 8           | entry/resource root node offset                     |
+| -16 + 4           | entry/resource root node size                       |
+| -12 + 8           | token root node offset                              |
+| -4 + 4            | token root node size                                |
+
+### Metadata
+
+| Name        | Type   | Description        |
+| ----------- | ------ | ------------------ |
+| version     | string | dictionary version |
+| entry_num   | u64    | entry number       |
+| author      | string | author name        |
+| email       | string | email              |
+| create_time | string | create time        |
+| comment     | string | other information  |
 
 ### Parsing Node
 
