@@ -1,5 +1,5 @@
 # Summary
 
 [Home](./home.md)
-[Specification](./spec.md)
+[Specification](./specification.md)
 [Manufacture](./manufacture.md)
