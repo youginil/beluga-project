@@ -20,9 +20,7 @@ CREATE TABLE {} (
 
 ## File Transformation
 
-[beluga-builder](https://github.com/youginil/beluga-project/releases) is a file convertor. It can do:
-
-- `.mdx` --> `.bel-db`
-- `.mdd` --> `.beld-db`
-- `.bel` <--> `.bel-db`
-- `.beld` <--> `.beld-db`
+- [beluga-builder](https://github.com/youginil/beluga-project/releases) is a file convertor. It can do:
+  - `.bel` <--> `.bel-db`
+  - `.beld` <--> `.beld-db`
+- [Converting Script](https://github.com/youginil/beluga-project) script for converting other dictionary formats to beluga
